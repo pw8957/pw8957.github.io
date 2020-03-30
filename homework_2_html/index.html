@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>회원가입</title>
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/join.css">
+
+	
+</head>
+<body>
+	<div class="join_wrap container">
+		<header id="header">
+			<h1>회원가입</h1>
+		</header>
+
+		<main role="main">
+			<ul class="join_list">
+				<li>
+					<input class="form-control" type="text" placeholder="아이디">
+				</li>
+				<li>
+					<input class="form-control" type="password" placeholder="비밀번호">
+				</li>
+				<li class="py-3">
+					<div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+						<label class="btn btn-outline-info">
+							<input type="radio" name="options" id="option1">남자
+						</label>
+						<label class="btn btn-outline-info">
+							<input type="radio" name="options" id="option2">여자
+						</label>
+					</div>
+				</li>
+				<li>
+					<dl class="user_birthday">
+						<dt>생일</dt>
+						<dd class="user_birthday_select">
+							<div class="form-group">
+								<select class="form-control" id="user_birthday_year" title="생일 년도">
+									<option value="">선택</option>
+									<option value="2020">2020</option>
+									<option value="2019">2019</option>
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+									<option value="2015">2015</option>
+									<option value="2014">2014</option>
+									<option value="2013">2013</option>
+									<option value="2012">2012</option>
+									<option value="2011">2011</option>
+									<option value="2010">2010</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control" id="user_birthday_mon" title="생일 월">
+									<option value="">선택</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control" id="user_birthday_year_day" title="생일 일">
+									<option value="">선택</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="user_tel">
+						<dt>전화</dt>
+						<dd class="user_tel_write">
+							<div class="form-group">
+								<select class="form-control" title="전화번호 맨 앞자리 선택" id="user_tel_first">
+									<option value="010">010</option>
+									<option value="011">011</option>
+									<option value="016">016</option>
+									<option value="018">018</option>
+									<option value="019">019</option>
+								</select>
+							</div>
+							<input class="form-control" type="text" placeholder="1234-5678" title="앞자리를 뺀 나머지 전화번호">
+							<button type="button" class="btn btn-outline-primary">인증</button>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<div class="agree_box">
+						<div class="agree_text">
+							<p>모든 약관 내용에 동의 합니다. 모든 약관 내용에 동의 합니다</p>
+							<p>모든 약관 내용에 동의 합니다. 모든 약관 내용에 동의 합니다</p>
+							<p>모든 약관 내용에 동의 합니다. 모든 약관 내용에 동의 합니다</p>
+						</div>
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch1">
+							<label class="custom-control-label" for="customSwitch1"></label>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="btn_wrap">
+				<button type="button" class="btn btn-primary btn-lg">가입하기</button>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
