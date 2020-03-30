@@ -35,8 +35,8 @@ $dir: '../images/'; // 디렉토리
 
 /* 헤더 */
 #header {display:-webkit-box;display:flex; position:relative; background:rgba(0,0,0,.4); height:vw(70px); padding:0 12px; border-bottom:solid 1px #664c38; z-index:10; -webkit-box-align:center; align-items:center; -webkit-box-pack:justify; justify-content:space-between;
-	.logo {width:vw(110px); height:vw(22px); font:0/0 a;
-		@include bg("logo.png");
+	.logo {a {display:block; width:vw(110px); height:vw(22px); font:0/0 a;
+		@include bg("logo.png");}
 	}
 	h2 {position:absolute; left:50%; width:vw(176px); height:vw(22px); font:0/0 a; -webkit-transform:translateX(-50%); transform:translateX(-50%);
 		@include bg("header_title.png");
