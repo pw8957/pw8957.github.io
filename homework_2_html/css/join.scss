@@ -13,27 +13,22 @@ fieldset,img {max-width:100%; border:0;}
 #header {padding:15px 0;
 	h1 {font-size:20px; font-weight:bold;}
 }
-.join_list {li {margin-top:10px;
-		&:first-child {margin-top:0;}
-	}
-}
+
 /* 생일 */
 .user_birthday {display:flex; align-items:center;
 	dt {padding:0 10px; flex:0 0 60px;}
 	dd {flex:auto;}
-	.user_birthday_select {display:flex;
-		.form-group {margin:0 5px; flex:auto;}
+	.form-row {margin:5px 0;
+		.form-group {margin:0;}
 	}
+	.user_birthday_select {display:flex;}
 }
 /* 전화 */
 .user_tel {display:flex; align-items:center;
 	dt {padding:0 10px; flex:0 0 60px;}
 	dd {flex:auto;}
-	.user_tel_write {display:flex;
-		> * {margin:0 5px; flex:auto;}
-		.form-group {flex:0 0 80px;}
-		input {flex:1;}
-		button {max-width:60px;}
+	.form-row {margin:5px 0;
+		.form-group {margin:0;}
 	}
 }
 /* 약관동의 */
