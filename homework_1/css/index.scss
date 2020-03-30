@@ -14,18 +14,20 @@ button,input,optgroup,select,textarea {margin:0; padding:0; line-height:1.15; fo
 button,[type="button"],[type=reset],[type=submit] {background:none; border:0; box-sizing:border-box; -webkit-appearance:button;}
 button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner {padding:0; border-style:none;}
 .blind {display:block; overflow:hidden; position:absolute; top:0; left:0; background:0 0; width:0; height:0; border:0; line-height:0; font-size:0;}
-body,html {height:100%; background: #000;}
+body,html {background:#000; height:100%;}
 
-$dir: '../images/';
+$dir: '../images/'; // 디렉토리
+
+/* 디바이스 반응 */
 @function vw($target) {
 	$vw-context: (750 * 0.01) * 1px;
 	@return ($target / $vw-context) * 1vw;
 }
+/* 백그라운드 */
 @mixin bg($fileName, $pos:0 0, $size:100% 100%, $repeat:no-repeat) {
 	background: url($dir+$fileName) $pos $repeat;
 	background-size:$size;
 }
-
 
 #event_wrap {overflow:hidden; position:relative; min-height:100vh; margin:0 auto; padding-bottom:vw(184px); 
 	@include bg("bg_main.png", 50% 0);
@@ -96,11 +98,12 @@ $dir: '../images/';
 	}
 
 	/* 총상금 */
-	.total_money {&::before {content:""; display:block; position:relative; width:vw(609px); height:vw(363px); margin:0 auto; 
+	.total_money {
+		&::before {content:""; display:block; position:relative; width:vw(609px); height:vw(363px); margin:0 auto; 
 		@include bg("main_money.png");
 		animation:upDown 1s linear infinite;
 		-webkit-animation:upDown 1s linear infinite;
-	}
+		}
 		h2 {display:-webkit-box; display:flex; position:relative; top:vw(-100px); width:vw(236px); height:vw(115px); margin:0 auto; font:0/0 a;
 			@include bg("total_money.png");
 			animation:titleScale .5s ease-in-out infinite;

@@ -1,14 +1,13 @@
 import React from 'react'
 import { Form } from 'react-bootstrap';
 
-function LabelComponent({text , className}) {
+function LabelBox({text , className}) {
 	return (
 		<Form.Label className={className}>{text}</Form.Label>
 	)
 }
-LabelComponent.defaultProps = {
+LabelBox.defaultProps = {
 	title : '회원가입'
 }
 
-
-export default LabelComponent;
+export default LabelBox;

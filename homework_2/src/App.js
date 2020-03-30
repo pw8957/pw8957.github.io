@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container,Col,Form, Button } from 'react-bootstrap';
+import { Container, Col, Form, Button } from 'react-bootstrap';
 import SignTitle from './components/header/SignTitle';
 import InputBox from './components/form/InputBox';
 import RadioButton from './components/form/RadioButton';
-import LabelComponent from './components/form/LabelComponent';
+import LabelBox from './components/form/LabelBox';
 import SelectBox from './components/form/SelectBox';
 import AgreeBox from './components/form/AgreeBox';
 
@@ -32,7 +32,7 @@ function App() {
 			</Form.Row>
 			<Form.Row>
 				<Col xs="2" className="d-flex align-items-center justify-content-center">
-					<LabelComponent text="생일" className="mb-0" />
+					<LabelBox text="생일" className="mb-0" />
 				</Col>
 				<Col>
 					<SelectBox>
@@ -106,7 +106,7 @@ function App() {
 			</Form.Row>
 			<Form.Row className="mt-2">
 				<Col xs="2" className="d-flex align-items-center justify-content-center">
-					<LabelComponent text="전화" className="mb-0" />
+					<LabelBox text="전화" className="mb-0" />
 				</Col>
 				<Col xs="3">
 					<SelectBox>
@@ -142,7 +142,7 @@ function App() {
 			>가입하기</Button>
 		</Form>
 	</Container>
-  );
+	);
 }
 
 export default App;
