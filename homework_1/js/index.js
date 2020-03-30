@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			// 네온사인
 			flicker();
 		});
-	}, 250);
+	}, 300);
 
 	/* 코인 배열넣기 */
 	function coinPush(classname) {
